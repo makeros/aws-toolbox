@@ -1,11 +1,17 @@
 # docker-aws-toolbox
 
+[![Docker Automated buil](https://img.shields.io/docker/automated/makeros/aws-toolbox.svg)]()
+[![Docker Build Statu](https://img.shields.io/docker/build/makeros/aws-toolbox.svg)]()
+
+---
+
+
 ## Includes:
 
 * [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) - version 1.11.129
 * [ecs-deploy](https://github.com/silinternational/ecs-deploy) - version 3.2
 
-## Getting started
+# Getting started
 
 Pull the alpine image: `docker pull makeros/aws-toolbox:alpine`
 
