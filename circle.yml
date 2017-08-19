@@ -1,0 +1,14 @@
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - docker build -t aws-toolbox alpine/.
+    - docker run --rm aws-toolbox aws --version
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - "curl -H 'Content-Type: application/json' --data '{\"docker_tag\":\"master\"}' -X POST https://registry.hub.docker.com/u/makeros/aws-toolbox/trigger/76288c47-c6fe-4988-b6b1-01306107b0a7/"
