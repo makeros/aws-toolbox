@@ -4,8 +4,9 @@ MAINTAINER Arek Czogala <aczogala@gmail.com>
 
 ADD config.env /config.env
 
-RUN apk --no-cache update && \
-    apk add python py-pip curl sudo jq tar groff less bash
+RUN source /config.env && \
+  apk --no-cache update && \
+  apk add python py-pip curl sudo jq=$JQ_VERSION tar groff less bash
 
 RUN source /config.env && \
   pip install --upgrade pip && \

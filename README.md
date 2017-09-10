@@ -10,6 +10,7 @@
 
 * [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) - version 1.11.136
 * [ecs-deploy](https://github.com/silinternational/ecs-deploy) - version 3.2
+* jq - commandline JSON processor - version 1.5
 
 # Getting started
 

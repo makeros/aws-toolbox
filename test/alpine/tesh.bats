@@ -11,3 +11,8 @@ load '../libs/bats-assert/load'
     run docker run --rm aws-toolbox sh -c 'cd ecs-deploy-3.2 && ./run-tests.sh'
     assert_success
 }
+
+@test "Should have jq installed since it's dependency for ecs-deploy" {
+    run docker run --rm aws-toolbox sh -c 'jq --help'
+    assert_output -p "jq - commandline JSON processor [version 1.5]"
+}
