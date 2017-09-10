@@ -8,8 +8,9 @@
 
 ## Includes:
 
-* [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) - version 1.11.129
+* [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) - version 1.11.136
 * [ecs-deploy](https://github.com/silinternational/ecs-deploy) - version 3.2
+* jq - commandline JSON processor - version 1.5
 
 # Getting started
 
@@ -28,3 +29,9 @@ docker run --rm -e AWS_ACCESS_KEY_ID= -e AWS_SECRET_ACCESS_KEY= -e AWS_DEFAULT_R
 ```
 docker run --rm -it makeros/aws-toolbox:alpine ecs-deploy
 ```
+
+# Tests
+Test builded image with Bats:
+* https://github.com/sstephenson/bats
+* https://github.com/ztombol/bats-support
+* https://github.com/ztombol/bats-assert
