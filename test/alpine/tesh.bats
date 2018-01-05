@@ -4,7 +4,7 @@ load '../libs/bats-assert/load'
 
 @test "Should have to correct aws-cli version installed" {
     run docker run --rm aws-toolbox aws --version
-    assert_output -p "aws-cli/1.11.136"
+    assert_output -p "aws-cli/1.14.18"
 }
 
 @test "Should run ecs-deploy test to check if it's properly installed" {
