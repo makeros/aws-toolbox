@@ -10,6 +10,7 @@
 
 * [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) - version 1.14.18
 * [ecs-deploy](https://github.com/silinternational/ecs-deploy) - version 3.2
+* [awsebcli](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html) - version 3.12.1
 * jq - commandline JSON processor - version 1.5
 
 # Getting started
@@ -20,6 +21,10 @@ Examples:
 
 ```
 docker run --rm  makeros/aws-toolbox:alpine aws --version
+```
+
+```
+docker run --rm  makeros/aws-toolbox:alpine eb --version
 ```
 
 ```

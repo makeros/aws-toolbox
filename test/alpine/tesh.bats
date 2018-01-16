@@ -2,7 +2,17 @@
 load '../libs/bats-support/load'
 load '../libs/bats-assert/load'
 
-@test "Should have to correct aws-cli version installed" {
+@test "Should have a correct aws-cli version installed" {
+    run docker run --rm aws-toolbox aws --version
+    assert_output -p "aws-cli/1.14.18"
+}
+
+@test "Should have a correct aws-eb-cli version installed" {
+    run docker run --rm aws-toolbox eb --version
+    assert_output -p "EB CLI 3.12.1"
+}
+
+@test "Should have a correct aws-cli version installed" {
     run docker run --rm aws-toolbox aws --version
     assert_output -p "aws-cli/1.14.18"
 }
