@@ -10,7 +10,7 @@ RUN source /config.env && \
 
 RUN source /config.env && \
   pip install --upgrade pip && \
-  pip install awscli==$AWS_CLI_VERSION
+  pip install awscli==$AWS_CLI_VERSION awsebcli==$AWS_EB_CLI
 
 RUN source /config.env && \
   curl -sL https://github.com/silinternational/ecs-deploy/archive/$ECS_DEPLOY_VERSION.tar.gz | tar -xzv && \
